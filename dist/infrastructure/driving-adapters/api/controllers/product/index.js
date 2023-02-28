@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getProductByNameController = exports.getProductByCodeController = exports.getProductByIDController = exports.deleteProductController = exports.updateProductController = exports.getAllProductsController = exports.createProductController = void 0;
+const createProduct_controller_1 = require("./createProduct.controller");
+Object.defineProperty(exports, "createProductController", { enumerable: true, get: function () { return createProduct_controller_1.createProduct; } });
+const getAllProducts_controller_1 = require("./getAllProducts.controller");
+Object.defineProperty(exports, "getAllProductsController", { enumerable: true, get: function () { return getAllProducts_controller_1.getAllProducts; } });
+const updateProduct_controller_1 = require("./updateProduct.controller");
+Object.defineProperty(exports, "updateProductController", { enumerable: true, get: function () { return updateProduct_controller_1.updateProduct; } });
+const deleteProduct_controller_1 = require("./deleteProduct.controller");
+Object.defineProperty(exports, "deleteProductController", { enumerable: true, get: function () { return deleteProduct_controller_1.deleteProduct; } });
+const getProductById_controller_1 = require("./getProductById.controller");
+Object.defineProperty(exports, "getProductByIDController", { enumerable: true, get: function () { return getProductById_controller_1.getProductByID; } });
+const getProductByCode_controller_1 = require("./getProductByCode.controller");
+Object.defineProperty(exports, "getProductByCodeController", { enumerable: true, get: function () { return getProductByCode_controller_1.getProductByCode; } });
+const getProductByName_controller_1 = require("./getProductByName.controller");
+Object.defineProperty(exports, "getProductByNameController", { enumerable: true, get: function () { return getProductByName_controller_1.getProductByName; } });

@@ -1,0 +1,17 @@
+﻿{
+    "dbName": "testbam",
+    "dbConfig": {
+        "server": "localhost",
+        "options": {
+            "port": 1433,
+            "trustServerCertificate": true
+        },
+        "authentication": {
+            "type": "default",
+            "options": {
+                "userName": "josueeegl",
+                "password": "Test12345."
+            }
+        }
+    }
+}
