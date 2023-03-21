@@ -14,7 +14,7 @@ export const getAllUsers = async (
 
     const users: UserAttributes[] | null = await userGetAllUseCase.run();
 
-    res.status(200).json(users);
+    res.status(200).send(JSON.stringify(users));
   } catch (e) {
     next(e);
   }
