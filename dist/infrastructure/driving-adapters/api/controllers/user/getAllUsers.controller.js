@@ -8,7 +8,7 @@ const getAllUsers = async (req, res, next) => {
         const UserRepoImplementation = new UserRepositoryImplementation_1.UserRepositoryImplementation();
         const userGetAllUseCase = new UserGetterAllUseCase_1.UserGetAllUseCase(UserRepoImplementation);
         const users = await userGetAllUseCase.run();
-        res.status(200).json(users);
+        res.status(200).send(JSON.stringify(users));
     }
     catch (e) {
         next(e);

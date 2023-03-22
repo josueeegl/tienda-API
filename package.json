@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "node dist/infrastructure/driving-adapters/api/start.js",
-    "ts": "tsc"
+    "tswatch": "tsc"
   },
   "author": "Josué García",
   "license": "ISC",
