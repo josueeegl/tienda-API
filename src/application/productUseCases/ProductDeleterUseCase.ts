@@ -2,7 +2,7 @@ import {
   ExistById,
   NotFoundException,
   ProductRepository,
-} from "./productModule";
+} from "../usesCasesModules";
 
 export class ProductDeleterUseCase {
   private readonly _productRepository: ProductRepository;

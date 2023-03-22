@@ -1,7 +1,4 @@
-import {
-  ProductAttributes,
-  ProductRepository,
-} from "./productModule";
+import { ProductAttributes, ProductRepository } from "../usesCasesModules";
 
 export class ProductGetAllUseCase {
   private readonly _productRepository: ProductRepository;

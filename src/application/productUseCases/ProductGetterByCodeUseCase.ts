@@ -2,7 +2,7 @@ import {
   ProductAttributes,
   ProductRepository,
   NotFoundException,
-} from "./productModule";
+} from "../usesCasesModules";
 
 export class ProductGetByCodeUseCase {
   private readonly _productRepository: ProductRepository;

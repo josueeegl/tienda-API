@@ -3,7 +3,7 @@ import {
   ExistById,
   UserAttributes,
   UserRepository,
-} from "./userModule";
+} from "../usesCasesModules";
 
 export class UserUpdateUseCase {
   private readonly _userRepository: UserRepository;

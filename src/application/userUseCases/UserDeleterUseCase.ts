@@ -1,4 +1,8 @@
-import { NotFoundException, ExistById, UserRepository } from "./userModule";
+import {
+  NotFoundException,
+  ExistById,
+  UserRepository,
+} from "../usesCasesModules";
 
 export class UserDeleterUseCase {
   private readonly _userRepository: UserRepository;

@@ -3,7 +3,7 @@ import {
   ExistUserByUsername,
   UserAttributes,
   UserRepository,
-} from "./userModule";
+} from "../usesCasesModules";
 
 export class UserGetByUsernameUseCase {
   private readonly _userRepository: UserRepository;

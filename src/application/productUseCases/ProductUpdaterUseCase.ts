@@ -3,7 +3,7 @@ import {
   ProductRepository,
   NotFoundException,
   ExistById,
-} from "./productModule";
+} from "../usesCasesModules";
 
 export class ProductUpdateUseCase {
   private readonly _productRepository: ProductRepository;

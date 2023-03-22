@@ -3,7 +3,7 @@ import {
   ExistByCode,
   ProductAttributes,
   ProductRepository,
-} from "./productModule";
+} from "../usesCasesModules";
 
 export class ProductCreatorUseCase {
   private readonly _productRepository: ProductRepository;
