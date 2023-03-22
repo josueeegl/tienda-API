@@ -1,5 +1,7 @@
-import { ProductAttributes } from "../../domain/entities/product";
-import { ProductRepository } from "../../domain/repositories/productRepository";
+import {
+  ProductAttributes,
+  ProductRepository,
+} from "./productModule";
 
 export class ProductGetAllUseCase {
   private readonly _productRepository: ProductRepository;

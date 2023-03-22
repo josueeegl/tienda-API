@@ -1,7 +1,9 @@
-import { UserAttributes } from "../../domain/entities/user";
-import { NotFoundException } from "../../domain/exceptions/notFoundException";
-import { UserRepository } from "../../domain/repositories/userRepository";
-import { ExistById } from "../../domain/services/existById";
+import {
+  NotFoundException,
+  ExistById,
+  UserAttributes,
+  UserRepository,
+} from "./userModule";
 
 export class UserUpdateUseCase {
   private readonly _userRepository: UserRepository;

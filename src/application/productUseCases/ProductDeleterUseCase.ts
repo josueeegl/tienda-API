@@ -1,6 +1,8 @@
-import { NotFoundException } from "../../domain/exceptions/notFoundException";
-import { ProductRepository } from "../../domain/repositories/productRepository";
-import { ExistById } from "../../domain/services/existById";
+import {
+  ExistById,
+  NotFoundException,
+  ProductRepository,
+} from "./productModule";
 
 export class ProductDeleterUseCase {
   private readonly _productRepository: ProductRepository;

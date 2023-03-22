@@ -1,6 +1,4 @@
-import { NotFoundException } from "../../domain/exceptions/notFoundException";
-import { UserRepository } from "../../domain/repositories/userRepository";
-import { ExistById } from "../../domain/services/existById";
+import { NotFoundException, ExistById, UserRepository } from "./userModule";
 
 export class UserDeleterUseCase {
   private readonly _userRepository: UserRepository;
@@ -19,7 +17,6 @@ export class UserDeleterUseCase {
         "No existe ningun usuario con el identificador proporcionado"
       );
 
-  
     await this._userRepository.delete(id);
   };
 }

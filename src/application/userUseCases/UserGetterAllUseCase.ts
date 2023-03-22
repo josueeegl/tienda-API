@@ -1,5 +1,4 @@
-import { UserAttributes } from "../../domain/entities/user";
-import { UserRepository } from "../../domain/repositories/userRepository";
+import { UserAttributes, UserRepository } from "./userModule";
 
 export class UserGetAllUseCase {
   private readonly _userRepository: UserRepository;

@@ -1,7 +1,9 @@
-import { UserAttributes } from "../../domain/entities/user";
-import { UserAlreadyExistsException } from "../../domain/exceptions/userAlreadyExistsException";
-import { UserRepository } from "../../domain/repositories/userRepository";
-import { ExistUserByUsername } from "../../domain/services/existUserByUsername";
+import {
+  UserAlreadyExistsException,
+  ExistUserByUsername,
+  UserAttributes,
+  UserRepository,
+} from "./userModule";
 
 export class UserCreatorUseCase {
   private readonly _userRepository: UserRepository;
@@ -15,7 +17,7 @@ export class UserCreatorUseCase {
   run = async (body: UserAttributes): Promise<UserAttributes> => {
     const userExists: boolean = await this._existsUserByUsername.run(
       body.username
-    ); 
+    );
 
     if (userExists) throw new UserAlreadyExistsException();
 

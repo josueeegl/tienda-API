@@ -1,6 +1,8 @@
-import { NotFoundException } from "../../domain/exceptions/notFoundException";
-import { ProductAttributes } from "../../domain/entities/product";
-import { ProductRepository } from "../../domain/repositories/productRepository";
+import {
+  ProductAttributes,
+  ProductRepository,
+  NotFoundException,
+} from "./productModule";
 
 export class ProductGetByCodeUseCase {
   private readonly _productRepository: ProductRepository;
@@ -12,7 +14,8 @@ export class ProductGetByCodeUseCase {
   run = async (code: string): Promise<ProductAttributes | null> => {
     const product: ProductAttributes | null =
       await this._productRepository.getByCode(code);
-    if (!product) throw new NotFoundException("no product with the given code: " + code);
+    if (!product)
+      throw new NotFoundException("no product with the given code: " + code);
 
     return product;
   };

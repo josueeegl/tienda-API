@@ -1,7 +1,9 @@
-import { NotFoundException } from "../../domain/exceptions/notFoundException";
-import { ExistUserByUsername } from "../../domain/services/existUserByUsername";
-import { UserAttributes } from "../../domain/entities/user";
-import { UserRepository } from "../../domain/repositories/userRepository";
+import {
+  NotFoundException,
+  ExistUserByUsername,
+  UserAttributes,
+  UserRepository,
+} from "./userModule";
 
 export class UserGetByUsernameUseCase {
   private readonly _userRepository: UserRepository;
@@ -17,9 +19,8 @@ export class UserGetByUsernameUseCase {
     if (!userExists)
       throw new NotFoundException("no user with the given username");
 
-    const user: UserAttributes | null = await this._userRepository.getByUsername(
-      username
-    );
+    const user: UserAttributes | null =
+      await this._userRepository.getByUsername(username);
     return user;
   };
 }

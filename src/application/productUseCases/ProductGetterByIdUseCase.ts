@@ -1,6 +1,8 @@
-import { NotFoundException } from "../../domain/exceptions/notFoundException";
-import { ProductAttributes } from "../../domain/entities/product";
-import { ProductRepository } from "../../domain/repositories/productRepository";
+import {
+  ProductAttributes,
+  ProductRepository,
+  NotFoundException,
+} from "./productModule";
 
 export class ProductGetByIdUseCase {
   private readonly _productRepository: ProductRepository;

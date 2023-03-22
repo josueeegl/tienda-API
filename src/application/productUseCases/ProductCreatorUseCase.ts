@@ -1,7 +1,9 @@
-import { UserAlreadyExistsException } from "../../domain/exceptions/userAlreadyExistsException";
-import { ExistByCode } from "../../domain/services/existByCode";
-import { ProductAttributes } from "../../domain/entities/product";
-import { ProductRepository } from "../../domain/repositories/productRepository";
+import {
+  UserAlreadyExistsException,
+  ExistByCode,
+  ProductAttributes,
+  ProductRepository,
+} from "./productModule";
 
 export class ProductCreatorUseCase {
   private readonly _productRepository: ProductRepository;
