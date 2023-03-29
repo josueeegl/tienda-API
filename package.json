@@ -4,9 +4,9 @@
   "description": "",
   "main": "dist/infrastructure/driving-adapters/api/start.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --verbose",
     "start": "node dist/infrastructure/driving-adapters/api/start.js",
-    "tswatch": "tsc"
+    "tswatch": "tsc --watch"
   },
   "author": "Josué García",
   "license": "ISC",
@@ -26,11 +26,13 @@
     "@types/jest": "^29.5.0",
     "@types/jsonwebtoken": "^9.0.0",
     "@types/node": "^18.11.17",
+    "@types/supertest": "^2.0.12",
     "@types/uuid": "^9.0.0",
     "eslint": "^8.30.0",
     "git-commit-msg-linter": "^4.9.2",
     "jest": "^29.5.0",
     "nodemon": "^2.0.20",
+    "supertest": "^6.3.3",
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
     "typesafe-dynamodb": "^0.2.3",

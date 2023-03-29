@@ -27,9 +27,7 @@ export const verifyLogin = async (
       if (encryptedPassword === user?.password) {
         res.status(200).json(user);
       } else {
-        res.status(200).json({
-          message: "wrong password or username",
-        });
+        res.status(200).send("wrong password or username");
       }
     } else {
       res.status(400).send("missing password or username");

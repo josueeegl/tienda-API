@@ -10,5 +10,6 @@
     "moduleResolution": "node",
     "baseUrl": "./src",
     "rootDir": "./src"
-  }
+  },
+  "exclude": ["jest.config.ts", "./src/tests"]
 }

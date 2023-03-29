@@ -19,7 +19,7 @@ export class UserUpdateUseCase {
 
     if (!userExists)
       throw new NotFoundException(
-        "No existe ningúna usuario con el identificador proporcionado"
+        "No existe ningun usuario con el identificador proporcionado"
       );
 
     await this._userRepository.update(body, id);

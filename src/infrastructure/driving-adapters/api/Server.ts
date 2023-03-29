@@ -3,7 +3,7 @@ import cors from "cors";
 import routes from "./routes";
 
 class Server {
-  private app: express.Application;
+  public app: express.Application;
   private port: string;
 
   constructor() {

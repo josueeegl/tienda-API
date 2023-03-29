@@ -8,7 +8,7 @@ const route = Router();
 route.use("/user", userRoutes);
 route.use("/products", productRoutes);
 route.use("/*", (req: Request, res: Response) => {
-  res.status(404).send("invalid request, check url");
+  res.status(404).send("invalid request, check url"); 
 });
 
 route.use((err: Error, req: Request, res: Response, next: NextFunction) => {
